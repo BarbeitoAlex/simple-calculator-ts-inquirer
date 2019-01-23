@@ -1,7 +1,5 @@
 import inquirer = require('inquirer');
 
-import validateNum from '../utils/validateNumber';
-
 export const choices = ['+ Addition', '- Subtraction', '* Multiplication', '/ Division']
 
 export const questions: inquirer.Questions = [
@@ -14,11 +12,17 @@ export const questions: inquirer.Questions = [
         type: 'input',
         name: 'number1',
         message: 'Introduce a number:',
-        validate: (answer) => validateNum(answer)
+        validate: (answer) => {
+            let valid = !isNaN(answer);
+            return valid || 'Enter a valid number';
+        }
     },{
         type: 'input',
         name: 'number2',
         message: 'Introduce another number:',
-        validate: (answer) => validateNum(answer)
+        validate: (answer) => {
+            let valid = !isNaN(answer);
+            return valid || 'Enter a valid number';
+        }
     }
 ]
