@@ -1,6 +1,6 @@
 ## Simple Calculator with Typescript + Inquirer.js
 
-Calculator in terminal to perform simple operations that I perform to test debug in *VS Code*.
+Calculator in terminal to do simple operations that I perform to test debug in *VS Code*.
 
 ## Install
 
