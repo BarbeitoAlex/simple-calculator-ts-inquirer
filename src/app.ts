@@ -3,10 +3,7 @@ import inquirer = require('inquirer');
 import { choices, questions } from './inquirer/prompt';
 import Calculator from './model/Calculator';
 
-
 const cal = new Calculator();
-
-let repeat: boolean = true;
 
 inquirer.prompt(questions).then((answers: inquirer.Answers) => {
     let op: string = answers['operate'];
