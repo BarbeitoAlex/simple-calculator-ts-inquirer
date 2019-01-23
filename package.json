@@ -4,6 +4,9 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
+    "start": "tsc && npm run only-start",
+    "only-start": "node ./dist/app.js",
+    "tsc": "tsc",
     "ts-node": "ts-node src/app.ts"
   },
   "author": "BarbeitoAlex",
